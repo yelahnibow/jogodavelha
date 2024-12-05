@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    padding-top: 170px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:center; 
+    height: 500px;
+    flex-direction: row;
+    
+}
+
+td{
+    background-color: white;
+    width:150px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
