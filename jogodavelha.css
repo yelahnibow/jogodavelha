@@ -3,6 +3,11 @@ body {
     padding-top: 170px;
 }
 
+p {
+    font-size: 30px;
+    padding: 5px;
+}
+
 .flex-container {
     display: flex;
     justify-content:center; 

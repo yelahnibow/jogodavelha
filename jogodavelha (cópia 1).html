@@ -1,0 +1,135 @@
+
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sorteio</title>
+  
+  </head>
+  
+  <body>
+      <style>
+          * {
+              font-family: Comic Sans MS;
+              text-align: center;
+  
+  
+          }
+  
+          table {
+              border-collapse: collapse;
+              width: 470px;
+              height: 450px;
+              margin: auto;
+          }
+  
+          td {
+              width: 150px;
+              height: 150px;
+              text-align: center;
+          }
+  
+          .botao {
+              background-color: rgba(0, 0, 0, 0);
+              border: none;
+              width: 100%;
+              height: 100%;
+          }
+  
+          p {
+              font-family: cursive;
+              font-size: 70px;
+              margin: 0px;
+              padding: 0px;
+          }
+  
+          #ln1 {
+              border-left: 0px;
+              border-top: 0px;
+              border-right: 10px solid black;
+              border-bottom: 10px solid black;
+          }
+  
+          #ln2 {
+              border-left: 10px solid black;
+              border-top: 0px;
+              border-right: 10px solid black;
+              border-bottom: 10px solid black;
+          }
+  
+          #ln3 {
+              border-left: 10px solid black;
+              border-top: 0px;
+              border-right: 0px;
+              border-bottom: 10px solid black;
+          }
+  
+          #ln4 {
+              border-left: 0px;
+              border-top: 10px solid black;
+              border-right: 10px solid black;
+              border-bottom: 10px solid black;
+          }
+  
+          #ln5 {
+              border-left: 10px solid black;
+              border-top: 10px solid black;
+              border-right: 10px solid black;
+              border-bottom: 10px solid black;
+          }
+  
+          #ln6 {
+              border-left: 10px solid black;
+              border-top: 10px solid black;
+              border-right: 0px;
+              border-bottom: 10px solid black;
+          }
+  
+          #ln7 {
+              border-left: 0px;
+              border-top: 10px solid black;
+              border-right: 10px solid black;
+              border-bottom: 0px;
+          }
+  
+          #ln8 {
+              border-left: 10px solid black;
+              border-top: 10px solid black;
+              border-right: 10px solid black;
+              border-bottom: 0px;
+          }
+  
+          #ln9 {
+              border-left: 10px solid black;
+              border-top: 10px solid black;
+              border-right: 0px;
+              border-bottom: 0px;
+          }
+      </style>
+      <h3 id="resultado">JOGO DA VELHA</h3>
+      <table>
+          <tr>
+              <td id="ln1"><input type="button" class="botao" onclick="marca('1')" /></td>
+              <td id="ln2"><input type="button" class="botao" onclick="marca('2')" /></td>
+              <td id="ln3"><input type="button" class="botao" onclick="marca('3')" /></td>
+          </tr>
+          <tr>
+              <td id="ln4"><input type="button" class="botao" onclick="marca('4')" /></td>
+              <td id="ln5"><input type="button" class="botao" onclick="marca('5')" /></td>
+              <td id="ln6"><input type="button" class="botao" onclick="marca('6')" /></td>
+          </tr>
+          <tr>
+              <td id="ln7"><input type="button" class="botao" onclick="marca('7')" /></td>
+              <td id="ln8"><input type="button" class="botao" onclick="marca('8')" /></td>
+              <td id="ln9"><input type="button" class="botao" onclick="marca('9')" /></td>
+          </tr>
+      </table>
+      <script src="jogodavelha.js">
+  
+  
+      </script>
+  </body>
+  
+  </html>
