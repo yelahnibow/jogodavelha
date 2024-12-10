@@ -1,6 +1,5 @@
 function marcaOpcao(op){
-    let a = `${op}`
-      let ap=document.getElementById(a);
-      ap.innerHtml='X';
-        alert(ap)
+  marcar = document.querySelector(`#q${op}`)
+  marcar.innerHtml = `<p>X</p>`
+  alert (marcar)
     }
