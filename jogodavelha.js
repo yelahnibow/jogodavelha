@@ -31,17 +31,26 @@ function marca(op){
 
  function validaVecedor(){
 
-  let linhaSuperior = casas[1]==casas[2]&&casas[2]==casas[3]&&casas[3]!=' '
-  let 
+  let linhaInfHorizontal = casas[7]==casas[8]&&casas[8]==casas[9]&&casas[9]!=' '
+  let linhaFrontHorizontal = casas[1]==casas[2]&&casas[2]==casas[3]&&casas[3]!=' '
+  let linhaSupHorizontal = casas[4]==casas[5]&&casas[5]==casas[6]&&casas[6]!=' '
+
+  let linhaEsqVertical = casas[1]==casas[4]&&casas[4]==casas[7]&&casas[7]!=' '
+  let linhaMeioVertical = casas[2]==casas[5]&&casas[5]==casas[8]&&casas[8]!=' '
+  let linhaDirVertical = casas[3]==casas[6]&&casas[6]==casas[9]&&casas[9]!=' '
+  
+  let linhaDiagonalA = casas[9]==casas[5]&&casas[5]==casas[1]&&casas[1]!=' '
+  let linhaDiagonalB = casas[3]==casas[5]&&casas[5]==casas[7]&&casas[7]!=' '
  
- 
- 
-  if (linhaSuperior){
+  let  validaPrenchencimento = linhaDiagonalA || linhaDiagonalB || linhaDirVertical  || linhaEsqVertical || linhaMeioVertical || linhaSupHorizontal || linhaFrontHorizontal || linhaInfHorizontal
+
+  if (validaPrenchencimento){
     alert (`o vencendor é ` + marcacao)
 
   }
-    
- 
- }
+  else if (contador == 9) {
 
- 
+  alert (`empate`)
+
+  }
+ }
